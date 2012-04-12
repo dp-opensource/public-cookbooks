@@ -8,7 +8,7 @@ action :cmd do
     if new_resource.debug
       command "`env php` app/console #{new_resource.command} --env=#{new_resource.env} " + new_resource.optional_params.join(' ')
     else 
-      command "`env php` app/console #{new_resource.command} --env=#{new_resource.env} --no-debug" + new_resource.optional_params.join(' ')
+      command "`env php` app/console #{new_resource.command} --env=#{new_resource.env} --no-debug " + new_resource.optional_params.join(' ')
     end
   end
 end
