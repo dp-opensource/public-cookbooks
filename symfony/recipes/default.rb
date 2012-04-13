@@ -3,8 +3,3 @@
         action :install
     end
 end
-
-# copy parameters.ini
-template "#{new_resource.path}/app/config/parameters.ini" do
-  source "parameters.ini.erb"
-end
