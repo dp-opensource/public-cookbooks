@@ -1,0 +1,15 @@
+This recipe needs obviously a readme.
+
+In the meantime, an example for the site-provider:
+
+symfony_site "installing default site" do
+  action :install
+  project_root node[:deploy][:deploy_to]
+  database_password "foo"
+  additional_parameters(
+  "images_www_url" => "#{node[:deploy][:images_www_url]}",
+  "statsd.host" => '127.0.0.1',
+  "statsd.port" => '8125'
+  )  
+end
+

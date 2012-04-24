@@ -1,16 +1,20 @@
 [parameters]
-database_driver    = <%= @params[:database_driver] %>
-database_host      = <%= @params[:database_host] %>
-database_port      = <%= @params[:database_port] %>
-database_name      = <%= @params[:database_name] %>
-database_user      = <%= @params[:database_user] %>
-database_password  = <%= @params[:database_password] %>
+database_driver    = <%= @database_driver %>
+database_host      = <%= @database_host %>
+database_port      = <%= @database_port %>
+database_name      = <%= @database_name %>
+database_user      = <%= @database_user %>
+database_password  = <%= @database_password %>
 
-mailer_transport   = <%= @params[:mailer_transport] %>
-mailer_host        = <%= @params[:mailer_host] %>
-mailer_user        = <%= @params[:mailer_user] %>
-mailer_password    = <%= @params[:mailer_password] %>
+mailer_transport   = <%= @mailer_transport %>
+mailer_host        = <%= @mailer_host %>
+mailer_user        = <%= @mailer_user %>
+mailer_password    = <%= @mailer_password %>
 
-locale             = <%= @params[:locale] %>
+locale             = <%= @locale %>
 
-secret             = <%= @params[:secret] %>
+secret             = <%= @secret %>
+
+<% @additional_parameters.each do |k,v| -%>
+<%= "#{k} = \"#{v}\"" %>
+<% end -%>
