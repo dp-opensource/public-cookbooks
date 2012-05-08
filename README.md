@@ -9,6 +9,10 @@ Feedback, comments, Rants? Please [contact][dptwitter] [us][dpsite]!
 [dptwitter]: http://twitter.com/dp_hh
 [dpsite]: http://www.digitalpioneers.de
 
+Shameless Plug: Jobs!
+==================
+Do you want access to the "non-public cookbooks" repository, too? :) Digital Pioneers is looking for talented Engineers and Administrators in Hamburg, Germany. Check [our jobs website][jobs], or ping any of our developers here on github!
+[jobs]: http://digitalpioneers.de/jobs/
 
 License and Author
 ==================
