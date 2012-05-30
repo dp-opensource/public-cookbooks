@@ -4,7 +4,7 @@ beanstalkd is a super fast and super simple messaging queue.
 
 ## Annotated json
 
-'''javascript
+```javascript
 {
 	beanstalkd: {
 		startup: false, # keep beanstalkd back from start during system boot. default is true, so beanstalkd will start during system boot
@@ -15,4 +15,4 @@ beanstalkd is a super fast and super simple messaging queue.
 		}
 	}
 }
-'''
+```
