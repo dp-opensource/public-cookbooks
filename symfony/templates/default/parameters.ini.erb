@@ -15,6 +15,8 @@ locale             = <%= @locale %>
 
 secret             = <%= @secret %>
 
+<%- if @additional_parameters %>
 <% @additional_parameters.each do |k,v| -%>
 <%= "#{k} = \"#{v}\"" %>
 <% end -%>
+<%- end %>
