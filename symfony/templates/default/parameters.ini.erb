@@ -17,6 +17,10 @@ secret             = <%= @secret %>
 
 <%- if @additional_parameters %>
 <% @additional_parameters.each do |k,v| -%>
+<% if v.is_a? String %>
 <%= "#{k} = \"#{v}\"" %>
+<% else %>
+<%= "#{k} = #{v}" %>
+<% end %>
 <% end -%>
 <%- end %>
