@@ -19,6 +19,7 @@ License and Author
 
 Author:: Florian Holzhauer (<f.holzhauer@digitalpioneers.de>)
 Author:: Ole Michaelis (<o.michaelis@digitalpioneers.de>)
+Author:: Michael Kamphausen (<m.kamphausen@digitalpioneers.de>)
 
 Copyright:: 2012, Digital Pioneers N.V.
 
