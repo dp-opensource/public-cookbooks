@@ -5,7 +5,7 @@ action :install do
 	 	source "parameters.ini.erb"
 	 	only_if do ::File.directory?("#{new_resource.project_root}") end
 	 	variables({
-  	:database_driver => new_resource.database_driver,
+   	:database_driver => new_resource.database_driver,
   	:database_host => new_resource.database_host,
   	:database_port => new_resource.database_port,
   	:database_name => new_resource.database_name,
@@ -18,6 +18,7 @@ action :install do
   	:additional_parameters => new_resource.additional_parameters,
   	:locale => new_resource.locale,
   	:secret => new_resource.secret,
+    :deploy_time => Time.now.to_i,
 	 	})
 	end
 end

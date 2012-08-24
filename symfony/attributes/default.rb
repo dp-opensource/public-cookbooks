@@ -25,3 +25,5 @@ default['symfony']['mailer_password'] = ''
 default['symfony']['locale'] = 'en'
 
 default['symfony']['secret'] = 'ThisTokenIsNotSoSecretChangeIt'
+
+default['symfony']['deploy_time'] = 0000

@@ -12,15 +12,15 @@ mailer_user        = <%= @mailer_user %>
 mailer_password    = <%= @mailer_password %>
 
 locale             = <%= @locale %>
-
 secret             = <%= @secret %>
+deploy_time        = <%= @deploy_time %>
 
 <%- if @additional_parameters %>
-<% @additional_parameters.each do |k,v| -%>
-<% if v.is_a? String %>
+	<% @additional_parameters.sort.each do |k,v| -%>
+		<% if v.is_a? String %>
 <%= "#{k} = \"#{v}\"" %>
-<% else %>
+		<% else %>
 <%= "#{k} = #{v}" %>
-<% end %>
-<% end -%>
+		<% end %>
+	<% end -%>
 <%- end %>
