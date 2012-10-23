@@ -1,11 +1,4 @@
-case node["platform"]
-when "centos", "redhat", "fedora"
-  default['symfony']['www_user']     = 'nobody'
-when "debian", "ubuntu"
-  default['symfony']['www_user']     = 'www-data'
-else
-  default['symfony']['www_user']     = 'www-data'
-end
+default['symfony']['www_user']     = 'www-data'
 
 default['symfony']['environment']     = 'prod'
 default['symfony']['debug']           = false
