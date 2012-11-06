@@ -1,5 +1,3 @@
-
-execute "install optipng" do
-	command "apt-get install optipng"
-  not_if "which optipng"
+package "optipng" do
+  action :install
 end
